@@ -5,10 +5,12 @@
 
 ## Unreleased
 ### Enhancements
+- Expand the histogram bucket of otelexpoerter (Add 1500ms). ([#563](https://github.com/KindlingProject/kindling/pull/563))
 - Set default values of `store_external_src_ip` and `StoreExternalSrcIP` to false to reduce occurrences of unexpected src IP data. ([#562](https://github.com/KindlingProject/kindling/pull/562))
 - Optimized the `networkanalyzer` component of the probe analyzer by utilizing Go's goroutines, enabling concurrent execution. ([#558](https://github.com/KindlingProject/kindling/pull/558))
 
 ### Bug fixes
+- Enhance dns with udp which is out of order.([#565](https://github.com/KindlingProject/kindling/pull/565))
 - Fix the bug where sending repetitive k8s_info_workload. Now each node only sends its own info.([#554](https://github.com/KindlingProject/kindling/pull/554))
 - Provide a new self metric for probe events. (skipped events/dropped events)([#553](https://github.com/KindlingProject/kindling/pull/553))
 
